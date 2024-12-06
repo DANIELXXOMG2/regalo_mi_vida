@@ -1,0 +1,102 @@
+* {
+    text-align: center;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: darkgray;
+    background: url(/assets/img/lightbg.jpg);
+    background-size: cover;
+}
+header {
+    width: 90%;
+}
+.nave {
+    background-color: black;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    width: 90%;
+}
+.nave li {
+    list-style: none;
+}
+.nave li {
+    display: flex;
+    background-color: dimgray;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+    font-size: 13px;
+    z-index: -2;
+    position: relative;
+}    
+.nave li:hover {
+    background-color: darkgray;
+}
+.nave p {
+    padding: 2px 0;
+    margin: 0 2px;
+    color: white;
+    /* border-style: ; */
+    border: 5px dashed white;
+    border-radius: 5px;
+    background-color: darkred;
+    font-size: 14px;
+}
+a.num {
+    display: flex;
+    place-items: center;
+    text-align: center;
+    padding: 2px 5px;
+    margin: 0 2px;
+    color: white;
+    background-color: darkred;
+    border-radius: 10px;
+    width: 40%;
+    height: 50px;
+    transition: 1s all ease;
+}
+a.num:hover {
+    background-color: rgb(237, 11, 56);
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+a.num i {
+    width: auto;
+    font-size: 24px;
+    z-index: 0;
+}
+li i {
+    width: 60%;
+    justify-content: end;
+    align-items: center;
+    text-align: end;
+    transition: 1s all ease;
+    z-index: -1;
+}
+.ico:hover {
+    background-color: green;
+    border-radius: 5px;
+    transform: translateX(-20px);
+}
+#heart:hover {
+    color: darkred;
+}
+#woman:hover {
+    color: purple;
+}
+#note:hover {
+    color: white;
+}
+h1 {
+    color: crimson;
+}
+video {
+    width: 400px;
+    height: auto;
+    margin: auto;
+}
