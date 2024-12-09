@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HR+Lijeva:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Yuji+Mai&display=swap');
 
 * {
+    justify-content: center; 
+    align-items: center; 
     text-align: center;
 }
 body {
@@ -10,7 +12,14 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: darkgray;
+}
+#index {
     background: url(/assets/img/lightbg.jpg);
+    background-size: cover;
+}
+#misa {
+    background: url(/assets/img/Misahappy.gif);
+    background-attachment: scroll;
     background-size: cover;
 }
 header {
@@ -48,6 +57,16 @@ header {
     border-radius: 5px;
     background-color: darkred;
     font-size: 14px;
+}
+.navep {
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.579);
+    color: white;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    right: 80px;
+    transition: 1s all ease;
 }
 a.num {
     display: flex;
@@ -88,26 +107,38 @@ li i {
 #heart:hover {
     color: darkred;
 }
-#woman:hover {
-    color: purple;
+#star:hover {
+    color: yellow;
 }
 #note:hover {
     color: white;
 }
 h1 {
+    display: flex;
     color: crimson;
+}
+h1 i {
+    margin-left: 10px;
+}
+h2 {
+    font-style: italic;
+    font-family: Cinzel;
 }
 video {
     width: 400px;
     height: auto;
-    margin: auto;
+    margin: auto;   
     border-radius: 20px;
     margin-top: 10px;
-    border: 1px dashed white;
+    border: 2px dashed white;
 }
 .agradecimiento {
-    width: 200px;
-    height: 100px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    width: 250px;
+    height: 150px;
     background: url(/assets/img/Lkiss.gif);
     background-size: cover;
     color: white;
@@ -116,14 +147,55 @@ video {
     position: fixed;
     bottom: 10px;
     transition: 1s all ease;
-
 }
 .agradecimiento:hover {
     filter: contrast(200%);
 }
 .agradecimiento p {
     font-size: 20px;
-    text-align: center;
+    text-align: center; 
     padding: 10px;
-    margin: 0;
+    margin: auto;
+    font-family: Yuji Mai;
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px black;
+    width: 90%;
+    transition: 1s all ease;
+}
+.container:hover {
+    background-color: lightgray;
+    transform: scale(1.1);
+}
+#main {
+    width: 50%;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px black;
+}
+#main:hover {
+    background-color: rgba(0, 0, 0, 0.401);
+    transform: scale(1.1);
+    color: white;
+    box-shadow: 5px 5px 5px white;
+}
+.container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    line-height: 2;
+}
+.container li {
+    display: inline;
+    border-bottom: 1px solid black;
+}
+.container li::before {
+    content: "⭐";
+}
+.container li:hover {
+    border-bottom: 1px solid white;
 }
