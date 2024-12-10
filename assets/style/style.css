@@ -14,12 +14,16 @@ body {
     background-color: darkgray;
 }
 #index {
-    background: url(/assets/img/lightbg.jpg);
+    background: url(/assets/img/bg/lightbg.jpg);
     background-size: cover;
 }
 #misa {
-    background: url(/assets/img/Misahappy.gif);
+    background: url(/assets/img/bg/Misahappy.gif);
     background-attachment: scroll;
+    background-size: cover;
+}
+#personajes {
+    background: url(/assets/img/bg/inuYashabg.jpg);
     background-size: cover;
 }
 header {
@@ -67,6 +71,10 @@ header {
     top: 0;
     right: 80px;
     transition: 1s all ease;
+}
+.navep:hover {
+    background-color: rgba(0, 0, 0, 0.782);
+    transform: scale(1.1);
 }
 a.num {
     display: flex;
@@ -124,6 +132,9 @@ h2 {
     font-style: italic;
     font-family: Cinzel;
 }
+a {
+    font-style: normal;
+}
 video {
     width: 400px;
     height: auto;
@@ -173,7 +184,8 @@ video {
     transform: scale(1.1);
 }
 #main {
-    width: 50%;
+    width: 70%;
+    font-size: 14px;
     border: 3px solid black;
     box-shadow: 5px 5px 5px black;
 }
@@ -198,4 +210,24 @@ video {
 }
 .container li:hover {
     border-bottom: 1px solid white;
+}
+.person {
+    display: flex;
+    background-color: rgba(69, 154, 228, 0.186);
+    padding: 5px 20px;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+}
+.person:hover {
+    background-color: rgba(69, 154, 228, 0.351);
+    color: white;
+}
+.imgclass {
+    width: 120px;
+    height: 120px;
+    border-radius: 500px;
+}
+.mini {
+    margin-left: 5px;
+    font-size: 10px;
 }

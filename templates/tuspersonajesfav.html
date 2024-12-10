@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tus Personajes | Favoritos</title>
+    <link rel="stylesheet" href="/assets/style/style.css"> <!-- Style-CSS -->
+    <link rel="shortcut icon" href="/assets/img/love.png" type="image/x-icon"> <!-- FAVicon -->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- tailwindcss -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet"> <!-- Google Icons -->
+    <link rel="stylesheet" href="/fontawesome-free-6.7.1-web/fontawesome-free-6.7.1-web/css/all.css"> <!-- FontAwesome Iconos -->
 </head>
-<body>
-    
+<body id="personajes">
+    <audio id="audioBoton" src="/assets/audios/misaes.mp3" preload="auto"></audio>
+    <button class="bg-red-300 bg-opacity-40 p-2 rounded-full" onclick="reproducirSonidoBoton()">Dale Click Aqui</button>
+
+    <header>
+        <nav class="navep">
+            <a href="index.html">
+                <h2>
+                    Deseas volver al Inicio? <br>
+                </h2>
+                Volvamos 🖤
+            </a>
+        </nav>
+        <h1 class="text-4xl font-bold text-blue-950">
+            Tus Amados Personajes
+        </h1>
+        <p class="bg-blue-400 bg-opacity-50 rounded-full px-10">
+            Me gustaria que me hablaras un dia, de cada uno un poco :d
+        </p>
+    </header>
+    <main>
+        <div class="container scale-90 hover:scale-95 hover:bg-opacity-20 hover:bg-red-950">
+            <div class="person">
+                <img src="/assets/img/personajes/inuyasha.jpg" alt="Inuyasha" class="imgclass mr-3 my-5">
+                Inuyasha <br>
+                <span class="mini">
+                    Se dice que es "impulsivo, temperamental, pero leal y protector. Tiene un lado sensible, especialmente hacia Kagome."
+                </span>
+            </div>
+            <div class="person">
+                <img src="/assets/img/personajes/mamoru.webp" alt="Mamoru" class="imgclass mr-3 my-5">
+                Mamoru <br>
+                <span class="mini">
+                    Serio, valiente y noble. Actúa como mentor y protector, mostrando un profundo sentido de justicia.
+                </span>
+            </div>
+            <div class="person">
+                <img src="/assets/img/personajes/tomoe.avif" alt="Tomoe" class="imgclass mr-3 my-5">
+                Tomoe <br>
+                <span class="mini">
+                    Reservado y serio, a menudo distante. Sin embargo, es muy protector y cariñoso con Nanami, mostrando un lado tierno.
+                </span>
+            </div>   
+        </div>
+    </main>
+    <footer class="agradecimiento" onclick="reproducirSonidoFooter()">    
+        <audio id="audioFooter" src="/assets/audios/yeii.mp3" preload="auto"></audio>
+        <p>
+            Eres la mejor mi niña
+        </p>
+    </footer>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>

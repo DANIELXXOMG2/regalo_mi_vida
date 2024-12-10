@@ -13,8 +13,12 @@
 <body id="misa">
     <header>
         <nav class="navep">
-            <h2>Deseas volver al Inicio?</h2>
-            <a href="index.html">Volvamos 🖤</a>
+            <a href="index.html">
+                <h2>
+                    Deseas volver al Inicio? <br>
+                </h2>
+                Volvamos 🖤
+            </a>
         </nav>
         <h1 class="text-3xl font-extrabold ">
             MY HONEY
@@ -47,10 +51,12 @@
         </ul>
         
     </main>
-    <footer class="agradecimiento">    
+    <footer class="agradecimiento" onclick="reproducirSonidoFooter()">    
+        <audio id="audioFooter" src="/assets/audios/yeii.mp3" preload="auto"></audio>
         <p>
             Eres la mejor mi niña
         </p>
     </footer>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>
